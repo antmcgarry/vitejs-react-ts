@@ -7,7 +7,6 @@ function App() {
 
   return (
     <div className="App">
-      <div></div>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>Hello Vite + React!</p>
@@ -41,6 +40,7 @@ function App() {
             Vite Docs
           </a>
         </p>
+        <div />
       </header>
     </div>
   );
