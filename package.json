@@ -12,7 +12,7 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "srx/*.{ts,tsx}": [
+    "src/*.{ts,tsx}": [
       "npm run prettier:fix",
       "npm run lint"
     ]
