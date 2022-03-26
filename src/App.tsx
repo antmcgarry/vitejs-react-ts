@@ -40,7 +40,6 @@ function App() {
             Vite Docs
           </a>
         </p>
-        <div />
       </header>
     </div>
   );
