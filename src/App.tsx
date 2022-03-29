@@ -11,10 +11,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>Hello Vite + React!</p>
         <p>
-          <button
-            type="button"
-            onClick={() => setCount((preValue) => preValue + 1)}
-          >
+          <button type="button" onClick={() => setCount((preValue) => preValue + 1)}>
             count is: {count}
           </button>
         </p>

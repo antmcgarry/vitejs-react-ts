@@ -8,14 +8,14 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "test": "jest",
-    "lint": "npx eslint --fix",
-    "prettier:fix": "prettier --write",
-    "prettier:Check": "prettier --check ."
+    "format": "prettier --write --ignore-unknown .",
+    "lint": "eslint --cache ./src",
+    "analyze": "source-map-explorer 'dist/assets/*.js'"
   },
   "lint-staged": {
-    "src/*.{ts,tsx}": [
-      "npm run prettier:fix",
-      "npm run lint"
+    "*.{ts,tsx}": [
+      "eslint --cache --max-warnings=0 src/**",
+      "prettier --write --ignore-unknown ."
     ]
   },
   "dependencies": {
