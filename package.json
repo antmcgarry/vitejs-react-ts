@@ -6,6 +6,8 @@
     "prepare": "husky install",
     "dev": "vite",
     "build": "tsc && vite build",
+    "build:staging": "tsc && vite build --mode staging --debug",
+    "build:production": "tsc && vite build --mode production --debug",
     "preview": "vite preview",
     "test": "jest",
     "format": "prettier --write --ignore-unknown .",
