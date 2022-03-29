@@ -21,5 +21,5 @@ function ${name}(props) {
 }
 module.exports = ${name};
             `;
-  }
+  },
 };

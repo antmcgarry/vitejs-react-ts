@@ -7,10 +7,10 @@ module.exports = {
   extensionsToTreatAsEsm: ['.ts', '.tsx'],
   moduleDirectories: ['node_modules', './src'],
   transform: {
-    '^.+\\.svg$': '<rootDir>/jest-svg-transformer.js'
+    '^.+\\.svg$': '<rootDir>/jest-svg-transformer.js',
   },
   moduleNameMapper: {
-    '\\.(css|less|scss)$': 'identity-obj-proxy'
+    '\\.(css|less|scss)$': 'identity-obj-proxy',
   },
   setupFilesAfterEnv: ['<rootDir>/src/setupTests.ts'],
   coverageThreshold: {
@@ -18,7 +18,7 @@ module.exports = {
       branches: 80,
       functions: 80,
       lines: 80,
-      statements: -10
-    }
-  }
+      statements: -10,
+    },
+  },
 };
