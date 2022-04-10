@@ -7,12 +7,12 @@ module.exports = {
   extensionsToTreatAsEsm: ['.ts', '.tsx'],
   moduleDirectories: ['node_modules', './src'],
   transform: {
-    '^.+\\.svg$': '<rootDir>/jest-svg-transformer.js',
+    '^.+\\.svg$': '<rootDir>/.jest/jest-svg-transformer.js',
   },
   moduleNameMapper: {
     '\\.(css|less|scss)$': 'identity-obj-proxy',
   },
-  setupFilesAfterEnv: ['<rootDir>/src/setupTests.ts'],
+  setupFilesAfterEnv: ['<rootDir>/.jest/setupTests.ts'],
   globals: {
     'ts-jest': {
       useESM: true,
